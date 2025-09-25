@@ -1,0 +1,115 @@
+
+.minigame-inpage-container {
+    padding-top: 40px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.minigame-content-wrapper {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.minigame-content-wrapper h3 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.status {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #00FFFF;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+}
+
+.board-row {
+    display: flex;
+}
+
+.square {
+    background: #2a2a2a;
+    border: 1px solid #444;
+    float: left;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 80px;
+    height: 80px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 80px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.square:focus {
+    outline: none;
+}
+
+.square:hover {
+    background-color: #3a3a3a;
+}
+
+.square:first-child {
+    border-left: none;
+}
+
+.square:last-child {
+    border-right: none;
+}
+
+.board-row:first-child .square {
+    border-top: none;
+}
+
+.board-row:last-child .square {
+    border-bottom: none;
+}
+
+.btn-outline-light {
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn-outline-light:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .minigame-inpage-container {
+        padding: 20px;
+    }
+
+    .square {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+        line-height: 60px;
+    }
+
+    .minigame-content-wrapper h3 {
+        font-size: 1.5rem;
+    }
+
+    .status {
+        font-size: 1rem;
+    }
+}

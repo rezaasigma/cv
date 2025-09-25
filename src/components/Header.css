@@ -1,0 +1,92 @@
+
+.header-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+#tsparticles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+}
+
+.header-section h1 {
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.profile-bubble {
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover; /* Ensures image covers the area without distortion */
+    border: 5px solid #00FFFF; /* Neon blue border */
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.6); /* Subtle glow effect */
+    margin: 0 auto 20px auto; /* Center horizontally and add bottom margin */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.header-section .lead {
+    font-weight: 300;
+    font-size: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 10px;
+    display: inline-block;
+    animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.02);
+        opacity: 0.9;
+    }
+}
+
+.header-buttons .btn {
+    margin: 10px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.header-buttons .btn-primary {
+    background-color: #00FFFF;
+    border-color: #00FFFF;
+    color: #121212;
+}
+
+.header-buttons .btn-primary:hover {
+    background-color: #00E0E0;
+    border-color: #00E0E0;
+    transform: translateY(-2px);
+}
+
+.header-buttons .btn-outline-light {
+    border-color: #00FFFF;
+    color: #00FFFF;
+}
+
+.header-buttons .btn-outline-light:hover {
+    background-color: #00FFFF;
+    color: #121212;
+    transform: translateY(-2px);
+}
