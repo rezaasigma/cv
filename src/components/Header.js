@@ -117,7 +117,7 @@ const Header = () => {
                 <FloatingIcons icons={floatingSkillIcons} />
                 <Fade direction="down" triggerOnce>
                     <img
-                        src={isHovered ? "/images/fern.jpeg" : "/images/profil.jpg"}
+                        src={isHovered ? "/images/fern.jpeg" : "/images/profil.JPG"}
                         alt="Profile"
                         className="profile-bubble mb-3"
                         onMouseEnter={() => setIsHovered(true)}
